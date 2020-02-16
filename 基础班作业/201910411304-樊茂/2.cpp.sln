@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "假期学习1", "假期学习1\假期学习1.vcxproj", "{33FFCD97-5032-420C-B639-7B7C3255EFA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{33FFCD97-5032-420C-B639-7B7C3255EFA6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{33FFCD97-5032-420C-B639-7B7C3255EFA6}.Debug|Win32.Build.0 = Debug|Win32
+		{33FFCD97-5032-420C-B639-7B7C3255EFA6}.Release|Win32.ActiveCfg = Release|Win32
+		{33FFCD97-5032-420C-B639-7B7C3255EFA6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

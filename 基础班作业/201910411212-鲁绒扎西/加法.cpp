@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() 
+{
+int a,b;
+int result;
+printf("请输入两个数：");
+scanf("%d,%d",&a,&b);
+result = a + b;
+printf("%d", result);
+return 0;
+}
+

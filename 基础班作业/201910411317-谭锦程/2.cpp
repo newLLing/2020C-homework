@@ -1,33 +1,29 @@
-
-#include<iostream>
+#include <iostream>
+#define SIZE 4
 using namespace std;
-int main()
-{   
-	int h;
-	cout << "你所需要的菱形大小（奇数）:";
-	cin >> h;
-	while (h / 2 == 0)
+void swap(int arr_1[SIZE], int arr_2[SIZE])
+{
+	for (int i = 0; i < SIZE; i++)
 	{
-		cout << "请重新输入奇数：";
-		cin >> h;
+		int midden = arr_1[i];
+		arr_1[i] = arr_2[i];
+		arr_2[i] = midden;
 	}
-	int i, j, k;
-	for (i = 1; i <= h/2; i++)
+}
+int main(void)
+{
+	int arr_1[SIZE]; int arr_2[SIZE];
+	cout << "please input your number1:" << endl;
+	for (int i = 0; i < SIZE; i++)
 	{
-		for (j = 1; j <=h/2-(i-1); j++)
-			cout << " ";
-		for (k = 1; k <=i*2-1; k++)
-			cout<<"*";
-		    cout << "\n";
+		cin >> arr_1[i];
 	}
-	for (i = 1; i <= h/2+1; i++)
+	cout << "please input your number2:" << endl;
+	for (int i = 0; i < SIZE; i++)
 	{
-		for (j =1; j < i; j++)
-			cout<<" ";
-		for (k = 1; k <= h-2*(i-1); k++)
-			cout<<"*";
-		    cout<<"\n";
+		cin >> arr_2[i];
 	}
+	swap(arr_1,arr_2);
 	system("pause");
 	return 0;
 }

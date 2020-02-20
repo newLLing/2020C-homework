@@ -1,0 +1,114 @@
+//The frist 
+#define M 3
+#define N 3
+#include<stdio.h>
+void fun(int tt[M][N],int pp[N])
+{
+	int temp=0, i, j;
+	for (i = 0; i < N; i++)
+	{
+		temp = 2147483647;
+		for (j = 0; j < M; j++)
+		{
+			if (tt[j][i] < temp)
+			{
+				temp = tt[j][i];
+			}
+		}
+		pp[i] = temp;
+	}
+}
+int main()
+{
+	int a[M][N], b[N];
+	int i, j, m, n;
+	printf("请输入二维数组：\n");
+	for (i = 0; i < M; i++)
+	{
+		for (j = 0; j < N; j++)
+		{
+			scanf_s("%d", &a[i][j]);
+		}
+	}
+	fun(a, b);
+	for (i = 0; i < N; i++)
+	{
+		printf("%d\t", b[i]);
+	}
+}
+
+
+
+//Second
+#define M 10
+#define N 10
+#include<stdio.h>
+void swap(char a[], char b[])
+{
+	int i,temp=0;
+	for (i = 0; i < M; i++)
+	{
+		temp = a[i];
+		a[i] = b[i];
+		b[i] = temp;
+	}
+}
+int main()
+{
+	char t[M], p[M];
+	int i, j, m, n;
+	printf("请输入前一个数组内容：");
+	scanf("%s", t);
+	printf("请输入后一个数组内容：");
+	scanf("%s", p);
+	swap(t, p);
+	for (i = 0; i < M; i++)
+	{
+		printf("%c", t[i]);
+	}
+	for (i = 0; i < M; i++)
+	{
+		printf("%c", p[i]);
+	}
+}
+
+
+
+//Third
+#define M 10
+#define N 10
+#include<stdio.h>
+void fun(int a[])
+{
+	int i, j, m=0, n=0,temp;
+	for (i = 0; i < M; i++)
+	{
+		if (a[i] > a[m])
+		{
+			m = i;
+		}
+	}
+	temp = a[M-1];
+	a[M-1] = a[m];
+	a[m] = temp;
+	for (j = 0; j < M; j++)
+	{
+		if (a[j] < a[n])
+		{
+			n = j;
+		}
+	}
+	temp = a[n];
+	a[n] = a[0];
+	a[0] = temp;
+}
+int main()
+{
+	int a[M] = {35,20,94,-23,39,-56,87,100,49,12};
+	int i;
+	fun(a);
+	for (i = 0; i < M; i++)
+	{
+		printf("%d\t", a[i]);
+	}
+}

@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main()
+{
+	double a=0;
+	int count = 0;
+	printf("请输入一个数！\n");
+	scanf("%lf", &a);
+	
+	if (a != 0)
+	{
+		if (a - 1 < 0)
+		{
+			while (a - 1 < 0)
+			{
+				a *= 10;
+				count--;
+			}
+		}
+		else if (a - 1 > 0)
+		{
+			while (a - 1 > 0)
+			{
+				a /= 10;
+				count++;
+			}
+			a *= 10;
+				count--;
+		}
+
+
+	}
+	printf("%fe%d", a, count);
+	system("pause");
+	return 0;
+}

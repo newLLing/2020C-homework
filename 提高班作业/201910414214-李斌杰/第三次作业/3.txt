@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int func(int a,int b)
+{
+	if (b > a)
+	{
+		int temp = a;
+		a = b;
+		b = temp;
+	}
+	int temp = 1;
+	while (temp != 0)
+	{
+		temp = a % b;
+		a = b;
+		b = temp;
+	}
+	return a;
+}
+
+int main()
+{
+	int a=0;
+	int b = 0;
+	int x = 0;
+	printf("请输入数(以空格隔开)\n");
+	scanf("%d%d", &a,&b);
+	if (b == 0)
+	{
+		printf("NONE\n");
+	}
+	else
+	{
+		 x=func(a, b);
+	}
+	
+	printf("%d/%d\n", a / x, b / x);
+
+	system("pause");
+	return 0;
+}

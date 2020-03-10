@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+double cos(double x)
+{
+	int n = -1;
+	double temp= 2;
+	double result = 1;
+	int i = 1;
+	while(i<10)
+	{
+		x = x * x;
+		result += n * x / temp;
+		n *= n; 
+		temp *= 2 * i*(2 * i - 1);
+		i++;
+	}
+	return result;
+}
+int main()
+{
+	double x = 0;
+	printf("请输入一个数：\n");
+	scanf("%lf", &x);
+	printf("%f\n", cos(x));
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void func(int num)
+{
+	int sum = 0;
+	int flag = 0;
+	for (int i = 1; i < num; i++)
+	{
+		
+		for(int j = i;j<num;j++)
+		{
+			sum += j;
+			if (sum == num)
+			{
+				flag = 1;
+				for (int k = i; k <= j; k++)
+				{
+					printf("%d ", k);
+
+				}
+				printf("\n");
+				sum = 0;
+				break;
+			}
+			else if (sum > num)
+			{
+				sum = 0;
+				break;
+			}
+			
+		}
+	}
+	if (flag == 0)
+	{
+		printf("NONE\n");
+	}
+}
+
+int main()
+{
+	int a;
+	printf("请输入数\n");
+	scanf("%d", &a);
+	func(a);
+
+
+	system("pause");
+	return 0;
+}

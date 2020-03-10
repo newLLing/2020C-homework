@@ -1,0 +1,19 @@
+1.使应用的面更广，更灵活
+2. short  a=80;
+    unsigned int b=42110;
+    unsigned long long c=3000000000;
+3.
+4.33L是long型，33是int型
+5.不等价
+6.  (1)char a=88;
+            cout<<a<<endl;
+     (2)
+7.不会；会。
+8.a=91;b=15;c=0;d=1;e=3
+9.int a=(int)x1+(int)x2;
+   int b=(int)(x1+x2);
+10.a.int
+     b.float
+     c.char
+     d.
+     e.double

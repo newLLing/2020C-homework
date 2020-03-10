@@ -1,0 +1,126 @@
+1、
+#include <iostream>
+
+using namespace std;
+const double TANSFER = 1.0 / 12;
+int main()
+{
+	int inch = 0;
+	cout << "_";
+	cin >> inch;
+	double foot = inch * TANSFER;
+	cout << foot << endl;
+	return 0;
+	
+}
+
+
+
+2、
+
+
+
+#include <iostream>
+
+using namespace std;
+const double x1 = 1.0/12;
+const double x2 = 0.0254;
+const double x3 = 1 / 2.2;
+int main()
+{
+	double inch = 0;  // 英寸
+	double foot = 0;	// 英尺= 12 * inch 
+	double pound = 0;	// 磅
+	double result = 0;
+	
+	cout << "请输入身高(英尺 + 英寸)" << endl;
+	cin >> inch >> foot;
+	cout << "请输入体重(磅)" << endl;
+	cin >> pound;
+
+
+	double temp = (foot*x1 +inch)*x2;
+	result = pound*x3/(temp*temp);
+	return 0;
+}
+
+3、
+
+#include <iostream>
+
+
+using namespace std;
+
+
+int main()
+{
+
+	double degrees = 0;
+	double minutes = 0;
+	double seconds = 0;
+
+	cout << "Enter a latitude in degrees,minutes,and seconds："<<endl;
+	cout << "First,enter the degrees：" ;
+	cin >> degrees;
+	cout << " enter the minutes of arc :";
+	cin >> minutes;
+	cout << "Finally,enter the seconds of arc:";
+	cin >> seconds;
+
+	cout << degrees << "degrees,"
+		<< minutes << "minutes,"
+		<< seconds << "seconds"
+		<< "=" << minutes/60 + degrees  + seconds / 60/60<<"degrees";
+
+	return 0;
+}
+
+4、
+
+#include <iostream>
+
+using namespace std;
+
+const int TANS = 60;
+int main()
+{
+	long long seconds = 0;
+
+	cout << "Enter the number of seconds:";
+	cin >> seconds;
+	long long days = seconds / (TANS * TANS * 24);
+	long long hours= (seconds % (TANS * TANS * 24))/(TANS*TANS);
+	long long minutes = (seconds - days * (TANS * TANS * 24) - hours * (TANS*TANS))/TANS;
+	long long seconds2 = seconds % TANS;
+	
+	cout << seconds << "seconds" << " = "
+		<< days << "days,"
+		<< hours << "hours,"
+		<< minutes << "minutes,"
+		<< seconds2 << "seconds" << endl;
+	return 0;
+}
+5、
+#include <iostream>
+
+using namespace std;
+
+
+int main()
+{
+
+
+	long long population_world = 0;
+	long long population_us = 0;
+
+
+	cout << "Enter the world’s population:";
+	cin >> population_world;
+	cout << "Enter the population of the US:";
+	cin >> population_us;
+
+	cout<<"The population of the US is "<< (double)population_us/population_world*100<<"%"<<" of the world population."<<endl;
+
+
+	return 0;
+}

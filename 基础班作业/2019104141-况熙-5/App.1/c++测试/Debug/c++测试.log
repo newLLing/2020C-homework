@@ -1,0 +1,3 @@
+﻿  c++测试.cpp
+C:\Users\hp\source\repos\c++测试\c++测试\c++测试.cpp(11,10): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+  c++测试.vcxproj -> C:\Users\hp\source\repos\c++测试\Debug\c++测试.exe

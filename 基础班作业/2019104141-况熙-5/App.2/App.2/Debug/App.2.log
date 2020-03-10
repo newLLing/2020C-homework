@@ -1,0 +1,3 @@
+﻿  App.2.cpp
+C:\Users\hp\source\repos\App.2\App.2\App.2.cpp(12,22): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  App.2.vcxproj -> C:\Users\hp\source\repos\App.2\Debug\App.2.exe

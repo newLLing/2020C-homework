@@ -1,0 +1,14 @@
+1.因为有时输出的数据需要更大的范围，例如求20的阶层就需要用到 unsigned long long int的整型.
+2. short a=80;  unsigned int b=42110;  unsinged long long int c=3000000000
+3. 提供反绕的措施
+4.33L是长整型而33是整型，两个的精度不同
+5.不等价，因为char 'A'=65；
+6.（1）：利用格式化输出寻找
+    （2）：已知 A的Ascii码为65 依次递推得出字符
+7.由“向大看齐”的规则可知将long值赋给double变量不会有误差，而long long类型的范围比double大，所以会有舍入误差。
+8. a:ture  b:ture  c:false  d:ture  e:ture
+9. int a=(int)x1+(int)x2;
+    double c; 
+    x1+x2=(int) c;
+10.
+a. int   b. float    c.&n  d. ()   e.float

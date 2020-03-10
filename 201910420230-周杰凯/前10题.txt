@@ -1,0 +1,18 @@
+1.因为整数分长短大小，超过一定的字节，就需要用不同的整型。列如long和short。
+2.short a=80;
+  unsigned int b=42110;
+  long long c=3000000000;
+3.运用头文件climits 。
+4.数后加L表示这个数用long int声明的，而33用interesting声明的。
+5.分系统，只用在使用ASCII码的系统上等价。
+6.直接法char a=88; cout<<a<<endl;
+  强制转换cout <<(char)88<<endl;
+7.double为8个字节，精确到15位小数，long为4个字节，无误差，longlong则为8个字节的整型，超过一定的值就会有误差。
+8.91  15  0  1  3
+9.int sum;sum=(int)x1+(int)x2;
+  int sum;sum=int(int)(x1+x2);
+10.int整型
+   float浮点型
+   char型
+  （double型）
+   double型

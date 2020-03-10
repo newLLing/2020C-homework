@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	cout << "输入全球当前人口：";
+	long long World_p;
+	cin >> World_p;
+	cout << "输入美国当前人口：";
+	long long US_p;
+	cin >> US_p;
+	cout << "美国人口占比为：" << double(US_p) / double(World_p) * 100 << "%";
+	system("pause");
+	return 0;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+const int Sec_per_min = 60;
+const int Min_per_hour = 60;
+const int Hour_per_day = 24;
+using namespace std;
+int main()
+{
+	cout << "输入秒：";
+	long long total_sec;
+	cin >> total_sec;
+	int sec = total_sec % Sec_per_min;
+	int total_min = total_sec / Sec_per_min;
+	int min = total_min % Min_per_hour;
+	int total_hour = total_min / Min_per_hour;
+	int hour = total_hour % Hour_per_day;
+	int day = total_hour / Hour_per_day;
+	cout << total_sec << "seconds=" << day << "days," << hour << "hours," << min << "minutes," << sec << "seconds";
+	system("pause");
+	return 0;
+}

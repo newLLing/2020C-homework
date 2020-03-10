@@ -1,0 +1,17 @@
+1、选择最合适的，方便应用
+2、short a=80
+unsigned int b=42110
+long long c =3000000000
+3、使用climits来确定限制情况
+4、33L是long
+33是int
+5、不等价
+6、cout<<c<<endl;
+cout<<char(88)<<endl; 
+8、c:0;e:3
+9、int a=（int）x1+(int)x2
+int a=(int)(x1+x2)
+10、a:int
+b:float
+c:char
+

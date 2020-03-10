@@ -1,0 +1,12 @@
+#include <iostream>
+const double Inch_per_feet = 12;
+using namespace std;
+int main(void)
+{
+	cout << "请输入你的身高：_________\b\b\b";
+	double ht_inch;
+	cin >> ht_inch;
+	double ht_feet = ht_inch / Inch_per_feet;
+	cout << "你的身高是："<<ht_feet<<endl;
+	return 0;
+}

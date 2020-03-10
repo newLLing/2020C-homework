@@ -1,0 +1,21 @@
+#include <iostream>
+const double Minute_per_degree = 60;
+const double Second_per_minute = 60;
+using namespace std;
+int main()
+{
+	cout<< "请输入一个纬度：" << endl;
+	cout << "输入纬度：";
+	int degrees;
+	cin >> degrees;
+	cout << "输入分：";
+	int minutes;
+	cin >> minutes;
+	cout << "输入秒：";
+	int seconds;
+	cin >> seconds;
+	double Degree = degrees + minutes / Minute_per_degree + seconds / Second_per_minute / Minute_per_degree;
+	cout <<degrees << "degrees," << minutes << "minutes," << seconds << "seconds=" << Degree << "degrees";
+	system("pause");
+	return 0;
+}

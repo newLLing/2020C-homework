@@ -1,0 +1,24 @@
+1    为了方便不同的应用
+2    a  short a = 80
+      b  unsigned int a = 42110
+      c   unsigned long a = 3000000000
+3    提供多种整形
+4    33L强制为长整数long型，33没有强制
+5    不等价
+6    cout<<char(88)<<endl
+      cout<<(char)88<<endl
+7    不会   可能会
+8    a 91
+      b 15
+      c 0
+      d 1.5
+      e 3
+9    a  int a=(int)x1+(int)x2;
+          int a=int(x1)+int(x2)
+      b  int a=(int)(x1+x2);
+          int a=int(x1+x2)
+10  a int
+      b float
+      c char
+      d char
+      d double
